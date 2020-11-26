@@ -9,7 +9,6 @@
   margin-bottom: 3%;
   height: 190px;
   object-fit: cover;
-  
 }
 
 .stay__super-host {
@@ -35,7 +34,6 @@
   line-height: 15px;
   color: #828282;
   margin-right: 3%;
-
 }
 
 .stay__rating span {
@@ -48,6 +46,5 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
-
   color: #4f4f4f;
 }

@@ -4,7 +4,6 @@ import Stay from "../Stay";
 
 import stays from "../../assets/data/stays.json";
 
-
 const Stays = () => {
   const calcStays = () => {
     let lenght = stays.length;

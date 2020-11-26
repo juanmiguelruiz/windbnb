@@ -15,14 +15,14 @@ const Nav = () => {
       <div onClick={displayExtendedMenu} className="row nav">
         <div className="col s6">
           <input
-            className="input"
+            className="nav__input"
             type="text"
             placeholder="Location"
-            value="Helsinki, Findland"
+            value="Helsinki, Finland"
           />
         </div>
         <div className="col s4">
-          <input className="input" type="text" placeholder="Add guests" />
+          <input className="nav__input" type="text" placeholder="Add guests" />
         </div>
         <div className="col s2">
           <button>
