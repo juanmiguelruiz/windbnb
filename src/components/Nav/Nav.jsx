@@ -1,16 +1,28 @@
 import React from "react";
+import ExtendedMenu from "./ExtendedMenu";
 
 import "./styles.css";
 
 const Nav = () => {
+  function displayExtendedMenu() {
+    document.getElementsByClassName("menu")[0].style.display = "inline";
+    document.getElementsByClassName("stays")[0].style.opacity = "0.3";
+  }
+
   return (
     <div className="col s12">
-      <div className="row nav">
+      <ExtendedMenu />
+      <div onClick={displayExtendedMenu} className="row nav">
         <div className="col s6">
-          <input type="text" placeholder="Location" value="Helsinki, Findland"/>
+          <input
+            className="input"
+            type="text"
+            placeholder="Location"
+            value="Helsinki, Findland"
+          />
         </div>
         <div className="col s4">
-          <input type="text" placeholder="Add guests"/>
+          <input className="input" type="text" placeholder="Add guests" />
         </div>
         <div className="col s2">
           <button>
