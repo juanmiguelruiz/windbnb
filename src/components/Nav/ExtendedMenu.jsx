@@ -30,27 +30,36 @@ const ExtendedMenu = () => {
               close
             </i>
           </span>
-          <div className="nav">
+          <div className="nav nav__menu">
             <div className="row">
-              <div className="col s12">
+              <div className="col s12 l6">
                 <input
                   className="nav__input-menu"
                   type="text"
                   placeholder="Location"
                   value="Helsinki, Finland"
                 />
-
+              </div>
+              <div className="col s12 l6">
                 <input
-                  className="nav__input-menu"
+                  className="nav__input-menu nav__input-menu2"
                   type="text"
                   placeholder="Add guests"
                 />
+              </div>
+              <div className="nav__button-container2">
+                <a href className="nav__button-extended">
+                  <i className="material-icons nav__search-extended left">
+                    search
+                  </i>
+                  Search
+                </a>
               </div>
             </div>
           </div>
           <div className="nav__location-list">
             {locations.map((i) => (
-              <div className="col s12 nav__location-item">
+              <div className="col s12 l3 nav__location-item">
                 <i className="material-icons nav__location-extended left">
                   location_on
                 </i>

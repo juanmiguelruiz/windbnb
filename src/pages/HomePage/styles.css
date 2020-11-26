@@ -11,3 +11,43 @@ input {
 .row {
   margin-bottom: 10px !important;
 }
+
+/*Mobile M*/
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  .container {
+    width: 90% !important;
+  }
+}
+
+/*Mobile L*/
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .container {
+    width: 80% !important;
+  }
+}
+
+/*Tablet*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 80% !important;
+  }
+}
+
+/*Laptop*/
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .container {
+    width: 87% !important;
+  }
+}
+
+/*Laptop L*/
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 75% !important;
+  }
+}

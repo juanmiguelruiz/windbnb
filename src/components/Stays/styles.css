@@ -1,14 +1,53 @@
 .stays__info__location {
   font-family: Montserrat;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.2em;
   color: #333333;
 }
 
 .stays__info__stays {
   font-family: Montserrat;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 1em;
   color: #4f4f4f;
   padding: 2.5% 0;
+}
+
+/*Tablet*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .stays__info__location {
+    font-size: 1.7em;
+  }
+
+  .stays__info__stays {
+    font-size: 1.3em;
+    padding: 2.8% 0;
+  }
+}
+
+/*Laptop*/
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .stays__info__location {
+    font-size: 1.8em;
+  }
+
+  .stays__info__stays {
+    font-size: 1.4em;
+    padding: 2.8% 0;
+  }
+}
+
+/*Laptop L*/
+
+@media screen and (min-width: 1440px) {
+  .stays__info__location {
+    font-size: 1.8em;
+  }
+
+  .stays__info__stays {
+    font-size: 1.4em;
+    padding: 2.8% 0;
+  }
 }

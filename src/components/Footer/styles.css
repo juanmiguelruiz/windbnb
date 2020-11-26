@@ -5,6 +5,28 @@ footer {
 .footer {
   font-family: Montserrat;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 1em;
   color: #a9a9a9;
 }
+
+/*Tablet*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    font-size: 1.2em;
+  }
+}
+
+/*Laptop*/
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .footer {
+    font-size: 1.2em;
+  }
+}
+
+/*Laptop L*/
+
+@media screen and (min-width: 1440px) {
+}
+

@@ -5,7 +5,7 @@ button {
 }
 input[type="text"].nav__input {
   border: transparent !important;
-  font-size: 13px !important;
+  font-size: 0.92em !important;
   border-right: solid 1px #f2f2f2 !important;
   margin: 3px 0 0 10px !important;
   width: 93% !important;
@@ -13,10 +13,25 @@ input[type="text"].nav__input {
 
 input[type="text"].nav__input-menu {
   border: transparent !important;
-  font-size: 13px !important;
-  border-bottom: solid 1px #f2f2f2 !important;
-  margin: 3px 0 0 10px !important;
+  font-size: 0.92em !important;
+  margin: 3px 0 0 15px !important;
   width: 93% !important;
+}
+
+input[type="text"].nav__input-menu2 {
+  border: transparent !important;
+  font-size: 0.92em !important;
+  border-top: solid 1px #f2f2f2 !important;
+  margin: 3px 0 0 15px !important;
+  width: 93% !important;
+}
+
+input[type="text"][value] {
+  padding-left: 8% !important;
+}
+
+input[type="text"]::placeholder {
+  padding-left: 8% !important;
 }
 
 input[type="text"].nav__input:not(.browser-default):focus:not([readonly]) {
@@ -25,6 +40,12 @@ input[type="text"].nav__input:not(.browser-default):focus:not([readonly]) {
 
 input[type="text"].nav__input-menu:not(.browser-default):focus:not([readonly]) {
   box-shadow: 0 0 0 0 #26a69a !important;
+  border: black 1px solid !important;
+  border-radius: 25px;
+}
+
+.nav__button-container2 {
+  display: none;
 }
 .menu {
   background-color: white;
@@ -44,7 +65,7 @@ input[type="text"].nav__input-menu:not(.browser-default):focus:not([readonly]) {
   font-family: Mulish;
   font-style: normal;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 0.92em;
   line-height: 15px;
 }
 .nav {
@@ -72,7 +93,7 @@ input[type="text"].nav__input-menu:not(.browser-default):focus:not([readonly]) {
   font-family: Mulish;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1em;
 
   color: #f2f2f2;
 }
@@ -80,7 +101,7 @@ input[type="text"].nav__input-menu:not(.browser-default):focus:not([readonly]) {
   font-family: Mulish;
   font-style: normal;
   font-weight: 800;
-  font-size: 9px;
+  font-size: 0.9em;
   line-height: 11px;
   text-transform: uppercase;
 
@@ -104,7 +125,7 @@ input[type="text"].nav__input-menu:not(.browser-default):focus:not([readonly]) {
   font-family: Mulish;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 1em;
   line-height: 18px;
   color: #4f4f4f;
 }
@@ -121,4 +142,184 @@ input[type="text"].nav__input-menu:not(.browser-default):focus:not([readonly]) {
 
 .row.nav .col {
   padding: 0;
+}
+
+/*Mobile M*/
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  .nav {
+    width: 95% !important;
+  }
+
+  .nav__menu {
+    width: 80% !important;
+    display: flex;
+    margin-left: 9.5% !important;
+    margin-top: 15%;
+  }
+}
+
+/*Mobile L*/
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .nav {
+    width: 100% !important;
+  }
+
+  .nav__menu {
+    width: 80% !important;
+    display: flex;
+    margin-left: 9.5% !important;
+    margin-top: 15%;
+  }
+}
+
+/*Tablet*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav {
+    width: 100% !important;
+  }
+  .nav__icon {
+    padding: 42% 125%;
+  }
+
+  input[type="text"].nav__input {
+    font-size: 1.2em !important;
+  }
+
+  input[type="text"].nav__input-menu {
+    font-size: 1.2em !important;
+  }
+
+  .menu .row .col.s12 span {
+    padding: 3% 5%;
+    font-size: 1.2em;
+  }
+  .nav__menu {
+    width: 80% !important;
+    display: flex;
+    margin-left: 9.5% !important;
+    margin-top: 15%;
+  }
+
+  .nav__button-extended {
+    font-size: 1.4em;
+  }
+
+  .nav__button-container {
+    padding: 2%;
+    left: 45%;
+  }
+}
+
+/*Laptop*/
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  header {
+    margin-top: 5%;
+  }
+
+  .nav {
+    width: 30% !important;
+    position: absolute;
+    right: 7%;
+    top: 0;
+  }
+
+  .nav__menu {
+    width: 80% !important;
+    margin: 7% 0;
+  }
+
+  input[type="text"].nav__input-menu {
+    margin: 3px 0 0 20% !important;
+    width: 180% !important;
+  }
+
+  input[type="text"].nav__input-menu2 {
+    margin-left: 100% !important;
+    width: 180% !important;
+  }
+
+  .nav__button-container {
+    display: none;
+  }
+
+  .nav__button-container2 {
+    display: inline;
+    position: absolute;
+    right: 5%;
+    width: 13.4%;
+    top: 18%;
+
+    border-radius: 16px;
+    padding: 0.8%;
+    background: rgba(235, 87, 87, 0.9);
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav__location-list {
+    padding: 17%;
+  }
+
+  input[type="text"].nav__input-menu2 {
+    border-top: solid 0px #f2f2f2 !important;
+  }
+}
+
+/*Laptop L*/
+
+@media screen and (min-width: 1440px) {
+  header {
+    margin-top: 5%;
+  }
+
+  input[type="text"].nav__input-menu2 {
+    border-top: solid 0px #f2f2f2 !important;
+  }
+  input[type="text"].nav__input-menu {
+    margin: 3px 0 0 20% !important;
+    width: 220% !important;
+  }
+
+  input[type="text"].nav__input-menu2 {
+    margin-left: 190% !important;
+    width: 220% !important;
+  }
+
+  .nav {
+    width: 30% !important;
+    position: absolute;
+    right: 12.4%;
+    top: 0;
+  }
+
+  .nav__menu {
+    width: 80% !important;
+    margin: 7%;
+  }
+
+  .nav__button-container {
+    display: none;
+  }
+
+  .nav__button-container2 {
+    display: inline;
+    position: absolute;
+    right: 5%;
+    width: 10%;
+    top: 14.4%;
+
+    border-radius: 16px;
+    padding: 0.8%;
+    background: rgba(235, 87, 87, 0.9);
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  }
+  .nav__location-list {
+    padding: 20%;
+  }
+  .nav__icon {
+    padding: 48% 67%;
+  }
 }

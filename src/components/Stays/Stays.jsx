@@ -17,16 +17,21 @@ const Stays = () => {
   };
 
   return (
-    <div className="row stays">
+    <div className="stays">
+    <div className="row">
       <Info location="Finland" stays={calcStays()} />
+      </div>
+      <div className="row">
       {stays.map((i) => (
         <Stay
           image={i.photo}
           description={i.title}
           rating={i.rating}
           super_host={i.superHost}
+          especs={i.type}
         />
       ))}
+    </div>
     </div>
   );
 };

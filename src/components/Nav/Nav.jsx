@@ -10,7 +10,7 @@ const Nav = () => {
   }
 
   return (
-    <div className="col s12">
+    <div className="col s12 l5">
       <ExtendedMenu />
       <div onClick={displayExtendedMenu} className="row nav">
         <div className="col s6">

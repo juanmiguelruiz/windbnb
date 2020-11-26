@@ -1,6 +1,8 @@
 .stay {
   padding: 5% 0;
   width: 90%;
+  display: flex;
+  margin: 0 auto;
 }
 
 .stay__img {
@@ -14,7 +16,7 @@
 .stay__super-host {
   font-family: Montserrat;
   font-weight: 800;
-  font-size: 10px;
+  font-size: 0.7em;
   line-height: 16px;
   text-transform: uppercase;
   color: #4f4f4f;
@@ -29,11 +31,22 @@
 .stay__description {
   font-family: Montserrat;
   font-style: normal;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 20px;
+
+  text-align: left;
+
+  color: #333333;
+}
+
+.stay__especs {
+  font-family: Montserrat;
+  font-style: normal;
   font-weight: 500;
-  font-size: 11px;
-  line-height: 15px;
+  font-size: 1em;
+  line-height: 17px;
   color: #828282;
-  margin-right: 3%;
 }
 
 .stay__rating span {
@@ -44,7 +57,95 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 1em;
   line-height: 15px;
   color: #4f4f4f;
+}
+
+/*Tablet*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .stay__img {
+    width: 80%;
+    height: 290px;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .stay__super-host {
+    font-size: 1em;
+  }
+
+  .stay__description {
+    font-size: 1.2em;
+  }
+
+  .stay__rating {
+    font-size: 1.2em;
+  }
+
+  .stay__text {
+    padding: 0 11% !important;
+    margin-top: 5%;
+  }
+  .stay__especs {
+    font-size: 1.2em;
+  }
+}
+
+/*Laptop*/
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .stay {
+    display: inline;
+  }
+  .stay .col.s12.l4 {
+    margin: 3% 0;
+    display: grid;
+  }
+  .stay__img {
+    width: 100%;
+    height: 180px;
+  }
+
+  .stay__rating {
+    font-size: 1em;
+  }
+
+  .stay__super-host {
+    font-size: 0.7em;
+  }
+
+  .stay__especs {
+    font-size: 0.85em;
+  }
+}
+
+/*Laptop L*/
+
+@media screen and (min-width: 1440px) {
+  .stay {
+    display: inline;
+  }
+  .stay .col.s12.l4 {
+    margin: 3% 0;
+    display: grid;
+  }
+  .stay__img {
+    width: 100%;
+    height: 220px;
+  }
+
+  .stay__rating {
+    font-size: 1.1em;
+  }
+
+  .stay__super-host {
+    font-size: .8em;
+  }
+
+  .stay__especs {
+    font-size: 1.1em;
+  }
+  
 }
